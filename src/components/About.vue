@@ -1,0 +1,57 @@
+<template>
+  <v-container>
+      <v-row>
+          <v-col>
+              <v-card 
+               class="d-flex flex-column rounded-xl mx-auto my-8 pa-2"
+               color="#fece00"
+               max-width="1200"
+               elevation="10"
+             >
+                
+                  <v-card-title 
+                  class="white orange--text" 
+                                     >
+                      <v-avatar size="100" center> <img src="../assets/veroroisinblit.jpg">
+                  </v-avatar>
+                      <h1>verotai</h1>
+                                         </v-card-title> 
+                  
+                  <v-card-text class="white">
+                      <span>"Desde 1991 me dedico al estudio y profundización del ser humano, y a la integración del mismo en mente, cuerpo, espíritu como totalidad en sus múltiples manifestaciones, con el fin de aportar un reestablecimiento de la armonía, bienestar mejorando así la calidad de vida". 
+
+Durante mi constante formación he obtenido los 
+siguientes títulos y certificados: 
+
+- Profesora Nacional Superior de Expresión Corporal 
+- (Escuela Nacional de danzas "María Ruanova") 
+- Profesora de hatha yoga (Instituto I.P.E.F.)
+- Masaje chino An-mo (Facultad de Medicina de Bs As) 
+- Terapeuta de Shiatsu (Esc. de Valerie Gaillare) 
+- Terapeuta de Zen shiatsu (Centro Brillo del sol)
+- Terapeuta de Masaje Tradicional Tailandés (Centro Brillo del Sol) 
+- Terapia de la Polaridad (Esc. de Masajes Tradicionales) 
+- Masaje Vibracional con Cuencos Tibetanos (E. de Masaje Tradicional) 
+- Sanación en el agua "Aqua Healing" 
+- (Prof. Marcel Breedveld) 
+- Reiki Jin Kei do (Profesor Jorge Martin )
+- Masajes Ayurveda (Centro Argentino de Ayurveda 
+- “Dr Domar Singh Madoriya”)</span>
+                  </v-card-text>
+              </v-card>
+          </v-col>
+      </v-row>
+  </v-container>
+</template>
+
+<script>
+export default {
+name: "About"
+}
+</script>
+
+<style>
+.v-application h1, span {
+    font-family: 'Playfair Display', serif;
+}
+</style>
