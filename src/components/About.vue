@@ -4,20 +4,23 @@
           <v-col>
               <v-card 
                class="d-flex flex-column rounded-xl mx-auto my-8 pa-2"
-               color="#fece00"
                max-width="1200"
-               elevation="10"
-             >
-                
-                  <v-card-title 
-                  class="white orange--text" 
-                                     >
-                      <v-avatar size="100" center> <img src="../assets/veroroisinblit.jpg">
-                  </v-avatar>
-                      <h1>verotai</h1>
-                                         </v-card-title> 
-                  
-                  <v-card-text class="white">
+               elevation="3">
+                 <v-img 
+                 class="white mt-5 rounded-circle" 
+                 width="100%" 
+                 max-width="300"
+                 src="../assets/veroroisinblit.jpg">
+                 </v-img>
+                 <v-img src="../assets/verotai.png"
+                 class="white"
+                 ></v-img>  
+<v-icon class="mt-n2"
+color="orange lighten-1">
+            mdi-circle
+          </v-icon>
+                  <v-card-text class="white"
+                 >
                       <span>"Desde 1991 me dedico al estudio y profundización del ser humano, y a la integración del mismo en mente, cuerpo, espíritu como totalidad en sus múltiples manifestaciones, con el fin de aportar un reestablecimiento de la armonía, bienestar mejorando así la calidad de vida". 
 
 Durante mi constante formación he obtenido los 
@@ -53,5 +56,8 @@ name: "About"
 <style>
 .v-application h1, span {
     font-family: 'Playfair Display', serif;
+}
+.v-card{
+    border: 1rem solid orange;
 }
 </style>

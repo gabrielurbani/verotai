@@ -15,7 +15,7 @@
   class="rounded-xl mx-auto my-8 pa-4"
   :color=" `${card.backgroundColor}`"
   max-width="600"
-  elevation="6"
+  elevation="3"
   >
     <v-img
       :src="card.img"

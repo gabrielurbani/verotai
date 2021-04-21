@@ -1,15 +1,13 @@
 <template>
   <div>
-    <v-app-bar color="#FFC600">
+    <v-app-bar>
        <v-img alt="Verotai logo"
     class="mx-2"
     src="../assets/mandala.png"
     max-height="40"
     max-width="40"
     contain
-  ></v-img>
-      
-
+  ></v-img>      
       <v-spacer></v-spacer>
 
       <!-- mobile menu button -->
@@ -73,3 +71,28 @@ export default {
   }
 }
 </script>
+<style>
+
+.v-application {
+        
+    font-family: 'Playfair Display', serif;
+}
+.v-application v-btn{
+  font-family: 'Playfair Display', serif;
+
+}
+.v-app-bar {
+  background-color: #F07575; /* fallback color if gradients are not supported */
+  background-image: -webkit-linear-gradient(left, #FAAC00, hsl(64, 98%, 70%), #FAAC00); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background-image:    -moz-linear-gradient(left, #FAAC00, hsl(64, 98%, 70%), #FAAC00); /* For Firefox (3.6 to 15) */
+  background-image:      -o-linear-gradient(left, #FAAC00, hsl(64, 98%, 70%), #FAAC00); /* For old Opera (11.1 to 12.0) */
+  background-image:         linear-gradient(to left,#FAAC00, hsl(64, 98%, 70%), #FAAC00); /* Standard syntax; must be last */
+}
+.v-navigation-drawer {
+  background-color: #F07575; /* fallback color if gradients are not supported */
+  background-image: -webkit-linear-gradient(top, #FAAC00, hsl(64, 98%, 70%), #FAAC00); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background-image:    -moz-linear-gradient(top, #FAAC00, hsl(64, 98%, 70%), #FAAC00); /* For Firefox (3.6 to 15) */
+  background-image:      -o-linear-gradient(top, #FAAC00, hsl(64, 98%, 70%), #FAAC00); /* For old Opera (11.1 to 12.0) */
+  background-image:         linear-gradient(to bottom,#FAAC00, hsl(64, 98%, 70%), #FAAC00); /* Standard syntax; must be last */
+}
+</style>
