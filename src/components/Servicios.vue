@@ -1,40 +1,36 @@
 <template>
-
   <v-container class="d-flex flex-wrap">  
-<v-row>
-  <v-col
-    sm="10"
-    offset-sm="1"
-    lg="5"
-    v-for="card in cards" 
-  :key="card.id" 
-  >
-  <v-card 
-  class="rounded-l mx-auto my-8 pa-4"
-  :color=" `${card.backgroundColor}`"
-  max-width="600"
-  elevation="3"
-  >
-    <v-img
-      :src="card.img"
-      height="350px"
-    ></v-img>
-
-    <v-card-title class="white" >
-      {{ card.title }}
-<v-divider  inset role="presentation"></v-divider>
-    </v-card-title>
-
-    <v-card-text class="white">
-      {{ card.description }}
-    </v-card-text>
-
-    <v-card-actions class="white">
-  <v-spacer></v-spacer>
-      <v-btn
-        small
-        :color="`${card.color}`"
-        class="white--text"
+    <v-row>
+      <v-col
+        sm="10"
+        offset-sm="1"
+        lg="5"
+        v-for="card in cards" 
+        :key="card.id" 
+      >
+        <v-card 
+          class="rounded-l mx-auto my-8 pa-4"
+          :color=" `${card.backgroundColor}`"
+          max-width="600"
+          elevation="3"
+        >
+        <v-img
+          :src="card.img"
+          height="350px"
+        ></v-img>
+        <v-card-title class="white" >
+           {{ card.title }}
+        <v-divider  inset role="presentation"></v-divider>
+        </v-card-title>
+        <v-card-text class="white">
+          {{ card.description }}
+        </v-card-text>
+        <v-card-actions class="white">
+        <v-spacer></v-spacer>
+        <v-btn
+          small
+          :color="`${card.color}`"
+          class="white--text"
         >
         <v-icon>mdi-plus</v-icon>
         Me interesa

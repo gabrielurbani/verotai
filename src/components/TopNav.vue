@@ -3,7 +3,7 @@
     <v-app-bar>
 <router-link to="/">       <v-img alt="Verotai logo"
     class="mx-2"
-    src="../assets/mandala.png"
+    src="../assets/mandala_icon.png"
     max-height="40"
     max-width="40"
     contain
@@ -34,6 +34,10 @@
   
               <v-btn href="https://www.facebook.com/verotai.terapiasholisticas" target="_blank" text>
           <v-icon>mdi-facebook</v-icon>
+        </v-btn>
+  
+        <v-btn href="https://www.youtube.com/user/verotai1000" target="_blank" text>
+          <v-icon>mdi-youtube</v-icon>
         </v-btn>
   
       </v-toolbar-items>
@@ -89,8 +93,10 @@ export default {
         { title: 'Contacto', link: 'contacto', icon: 'mdi-mail' },
       ],
       social: [
+        { title: 'Instagram', link: 'https://www.instagram.com/la_verotai/', icon: 'mdi-instagram'},
         { title: 'Facebook', link: "https://www.facebook.com/verotai.terapiasholisticas", icon: 'mdi-facebook' },
-        { title: 'Instagram', link: 'https://www.instagram.com/la_verotai/', icon: 'mdi-instagram'}
+        { title: 'Youtube', link: 'https://www.youtube.com/user/verotai1000', icon: 'mdi-youtube'}
+        
       ]
     }
   }

@@ -15,13 +15,12 @@
                  <v-img src="../assets/verotai.png"
                  class="white"
                  ></v-img>  
-<v-icon class="mt-n2"
-color="orange lighten-1">
-            mdi-circle
-          </v-icon>
-                  <v-divider class="mx-4"></v-divider>
-                  <v-card-text class="white"
-                 >
+                <v-icon class="mt-n2"
+                    color="orange lighten-1">
+                    mdi-circle
+                </v-icon>
+                 <v-divider class="mx-4"></v-divider>
+                 <v-card-text class="white">
                       <span>"Desde 1991 me dedico al estudio y profundización del ser humano, y a la integración del mismo en mente, cuerpo, espíritu como totalidad en sus múltiples manifestaciones, con el fin de aportar un reestablecimiento de la armonía, bienestar mejorando así la calidad de vida". 
 
 Durante mi constante formación he obtenido los 
