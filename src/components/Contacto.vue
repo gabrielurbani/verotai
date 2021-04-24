@@ -54,6 +54,6 @@ name: "Contacto"
 }
 .subtitle-1 a:link, a:visited, a:active{
     text-decoration: none;
-    color: black !important;
+    color: #a8a1a1 !important;
 }
 </style>

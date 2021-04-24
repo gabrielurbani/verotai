@@ -25,7 +25,7 @@
                 color="orange lighten-1">
               mdi-circle
               </v-icon>
-              <v-card-subtitle class="text-xl-h1 mt-3 align-baseline" 
+              <v-card-subtitle class="text-xl-h4 mt-3 align-baseline" 
               >VERONICA ROISINBLIT | TERAPEUTA</v-card-subtitle>
           </v-card>
       </v-col></v-row>
