@@ -2,8 +2,8 @@
   <v-container>
       <v-row>
           <v-col>
-              <v-card 
-               class="d-flex flex-column rounded-xl mx-auto my-8 pa-2"
+              <v-card id="about" 
+               class="d-flex flex-column rounded-l mx-auto my-8 pa-2"
                max-width="1200"
                elevation="3">
                  <v-img 
@@ -19,6 +19,7 @@
 color="orange lighten-1">
             mdi-circle
           </v-icon>
+                  <v-divider class="mx-4"></v-divider>
                   <v-card-text class="white"
                  >
                       <span>"Desde 1991 me dedico al estudio y profundización del ser humano, y a la integración del mismo en mente, cuerpo, espíritu como totalidad en sus múltiples manifestaciones, con el fin de aportar un reestablecimiento de la armonía, bienestar mejorando así la calidad de vida". 
@@ -56,8 +57,5 @@ name: "About"
 <style>
 .v-application h1, span {
     font-family: 'Playfair Display', serif;
-}
-.v-card{
-    border: 1rem solid orange;
 }
 </style>

@@ -5,14 +5,12 @@
   <v-col
     sm="10"
     offset-sm="1"
-    lg="4"
-    offset-lg="1"
-    
-  v-for="card in cards" 
+    lg="5"
+    v-for="card in cards" 
   :key="card.id" 
   >
   <v-card 
-  class="rounded-xl mx-auto my-8 pa-4"
+  class="rounded-l mx-auto my-8 pa-4"
   :color=" `${card.backgroundColor}`"
   max-width="600"
   elevation="3"
@@ -24,6 +22,7 @@
 
     <v-card-title class="white" >
       {{ card.title }}
+<v-divider  inset role="presentation"></v-divider>
     </v-card-title>
 
     <v-card-text class="white">
@@ -34,7 +33,6 @@
   <v-spacer></v-spacer>
       <v-btn
         small
-        
         :color="`${card.color}`"
         class="white--text"
         >
