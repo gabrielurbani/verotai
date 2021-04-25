@@ -9,33 +9,38 @@
         :key="card.id" 
       >
         <v-card 
-          class="rounded-l mx-auto my-8 pa-4"
+          class="rounded-lg mx-auto my-8 pa-4"
           :color=" `${card.backgroundColor}`"
           max-width="600"
           elevation="3"
         >
         <v-img
+          @click="card.show = !card.show"
           :src="card.img"
           height="350px"
         ></v-img>
-        <v-card-title class="white" >
+        <v-card-actions class="white">
+        <v-card-title class="white" @click="card.show = !card.show">
            {{ card.title }}
-        <v-divider  inset role="presentation"></v-divider>
         </v-card-title>
+      <v-spacer class="white"><v-divider></v-divider></v-spacer>
+      <v-btn
+        outlined
+        :color="`${card.color}`"
+        class="white--text"
+        icon
+        @click="card.show = !card.show"
+      >
+        <v-icon>{{ card.show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+      </v-btn>
+    </v-card-actions>
+        <v-expand-transition>
+        <div v-show="card.show">
         <v-card-text class="white">
           {{ card.description }}
         </v-card-text>
-        <v-card-actions class="white">
-        <v-spacer></v-spacer>
-        <v-btn
-          small
-          :color="`${card.color}`"
-          class="white--text"
-        >
-        <v-icon>mdi-plus</v-icon>
-        Me interesa
-      </v-btn>
-    </v-card-actions>
+        </div>
+        </v-expand-transition>
   </v-card>
   </v-col>
 </v-row>
@@ -45,8 +50,9 @@
 export default {
   props: ["id"],
   data: () => {
+    
     return {
-      cards: [
+    cards: [
         {
           id: 0,
           title: ": Zen-Shiatzu",
@@ -55,7 +61,7 @@ La palabra shiatsu significa en japonés "presión con los dedos", sin embargo l
           img: require("@/assets/zen-shiatzu.jpg"),
           color: "green lighten-2",
           backgroundColor: "#C8E3D0",
-          open: false
+          show: false
         },
         {
           id: 1,
@@ -67,7 +73,7 @@ y pies. También distintos estiramientos que evocan a las posturas de yoga. Es i
           img: require("@/assets/masaje-tailandes.jpg"),
           color: "yellow lighten-1",
           backgroundColor: "#F4FEA4",
-          open: false
+          show: false
         },
         {
           id: 2,
@@ -76,7 +82,7 @@ y pies. También distintos estiramientos que evocan a las posturas de yoga. Es i
           img: require("@/assets/polaridad.jpg"),
           color: "cyan",
           backgroundColor: "#AAE0E6",
-          open: false
+          show: false
         },
         {
           id: 3,
@@ -85,7 +91,7 @@ y pies. También distintos estiramientos que evocan a las posturas de yoga. Es i
           img: require("@/assets/cuenco.jpg"),
           color: "deep-purple lighten-2",
           backgroundColor: "#DED5E6",
-          open: false
+          show: false
         },
         {
           id: 4,
@@ -94,7 +100,7 @@ y pies. También distintos estiramientos que evocan a las posturas de yoga. Es i
           img: require("@/assets/reflexologia.jpg"),
           color: "deep-orange lighten-2",
           backgroundColor: "#F6DFB1",
-          open: false
+          show: false
         },
         {
           id: 5,
@@ -104,7 +110,7 @@ La propuesta es brindar el conocimiento del shantala a los padres que deseen inc
           img: require("@/assets/shantala.jpg"),
           color: "purple lighten-3",
           backgroundColor: "#F6E2E7",
-          open: false
+          show: false
         },
         {
           id: 6,
@@ -113,7 +119,7 @@ La propuesta es brindar el conocimiento del shantala a los padres que deseen inc
           img: require("@/assets/ayurveda.jpg"),
           color: "red lighten-1",
           backgroundColor: "#BA5A59",
-          open: false
+          show: false
         }
       ]
     };
