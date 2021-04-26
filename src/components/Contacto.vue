@@ -7,18 +7,12 @@
                 max-width="900"
                 >
               <v-img
-                height="250"
+                height="300"
                 src="../assets/verotai_contacto_mobile.jpg"
               ></v-img>
               <v-card-title class="orange--text display-1" >: Contacto</v-card-title>
               <v-divider class="mx-5"></v-divider>
               <v-card-text>
-              <div class="my-3 subtitle-1">
-                 <v-icon 
-                    color="orange lighten-3">
-                    mdi-phone
-                 </v-icon>  4544-0290
-              </div>
               <div class="my-3 subtitle-1">
                  <a href="https://api.whatsapp.com/send?phone=+541140611849"> 
                  <v-icon     
@@ -31,7 +25,7 @@
                     <v-icon 
                         color="orange lighten-3">
                         mdi-email
-                    </v-icon>verdevero@yahoo.com</a>
+                    </v-icon> verdevero@yahoo.com</a>
              </div>
         </v-card-text>
         <v-divider class="mx-4"></v-divider>
@@ -54,6 +48,6 @@ name: "Contacto"
 }
 .subtitle-1 a:link, a:visited, a:active{
     text-decoration: none;
-    color: #a8a1a1 !important;
+    color: #000111 !important;
 }
 </style>

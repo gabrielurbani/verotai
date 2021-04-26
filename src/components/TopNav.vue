@@ -7,6 +7,7 @@
     max-height="40"
     max-width="40"
     contain
+    id="hithere"
   ></v-img></router-link>
       <v-spacer></v-spacer>
 
@@ -19,9 +20,11 @@
 
       <!-- desktop & tablet menu -->
       <v-toolbar-items class="hidden-xs-only ">
+
         <v-btn class="text-capitalize font-weight-bold" to="Servicios" text>
           : Servicios
         </v-btn>
+
         <v-btn class="text-capitalize font-weight-bold" to="About" text>
           : Sobre Mi
         </v-btn>
@@ -32,7 +35,7 @@
           <v-icon>mdi-instagram</v-icon>
         </v-btn>
   
-              <v-btn href="https://www.facebook.com/verotai.terapiasholisticas" target="_blank" text>
+              <v-btn href="https://www.facebook.com/verotaiterapeutaholistica/" target="_blank" text>
           <v-icon>mdi-facebook</v-icon>
         </v-btn>
   
@@ -71,7 +74,6 @@
           :href="item.link"
           link
         >
-
           <v-list-item-content>
             <v-list-item-title><v-icon>{{item.icon}}</v-icon> {{ item.title }}</v-list-item-title>
           </v-list-item-content>
@@ -94,10 +96,20 @@ export default {
       ],
       social: [
         { title: 'Instagram', link: 'https://www.instagram.com/la_verotai/', icon: 'mdi-instagram'},
-        { title: 'Facebook', link: "https://www.facebook.com/verotai.terapiasholisticas", icon: 'mdi-facebook' },
+        { title: 'Facebook', link: "https://www.facebook.com/verotaiterapeutaholistica/", icon: 'mdi-facebook' },
         { title: 'Youtube', link: 'https://www.youtube.com/user/verotai1000', icon: 'mdi-youtube'}
-        
-      ]
+      ],
+      servicio:[
+        {title: ': Zen-Shiatzu', link: 'servicios.card.0'},
+        {title: ': Masaje Thailandes', link: 'servicios.card.1'},
+        {title: ': Polaridad', link: 'servicios.card.2'},
+        {title: ': Cuencos tibetanos', link: 'servicios.card.3'},
+        {title: ': Reflexologia', link: 'servicios.card.4'},
+        {title: ': Shantala', link: 'servicios.card.5'},
+        {title: ': Ayurveda', link: 'servicios.card.6'}
+
+      ],
+      closeOnContentClick: true,
     }
   }
 }
@@ -126,4 +138,22 @@ export default {
   background-image:      -o-linear-gradient(290deg,hsl(64, 98%, 70%),hsl(41, 100%, 49%) ,hsl(41, 100%, 69%),hsl(64, 98%, 70%)); /* For old Opera (11.1 to 12.0) */
   background-image:         linear-gradient(290deg,hsl(64, 98%, 70%),hsl(41, 100%, 49%) ,hsl(41, 100%, 69%),hsl(64, 98%, 70%)); /* Standard syntax; must be last */
 }
+#flash {
+  animation: flash 1000ms ease 2s 3 alternate;
+}
+@keyframes flash {
+	from { opacity: 1; }	
+	to { opacity: 0; }
+}
+#hithere {
+  animation: hithere 1s ease 2s 1;
+}
+@keyframes hithere {
+  30% { transform: scale(1.2); }
+  40%, 60% { transform: rotate(-20deg) scale(1.2); }
+  50% { transform: rotate(20deg) scale(1.2); }
+  70% { transform: rotate(0deg) scale(1.2); }
+  100% { transform: scale(1); }
+}
+
 </style>
